@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 350px;
+}
+
+.container ul {
+  list-style-type: none;
+  /* Remove os marcadores de lista */
+  padding: 0;
+  /* Remova o preenchimento padrão da lista */
+  text-align: left;
+  /* Alinhe à esquerda */  
+  list-style-type: none;
+  /* Remove os marcadores de lista */
+  padding: 0;
+  /* Remova o preenchimento padrão da lista */
+}
+
+/* Estilize os elementos da lista */
+li {
+  margin-bottom: 10px;
+  /* Adicione espaço entre os itens da lista */
+}
+.button{
+  text-align: center;
+}

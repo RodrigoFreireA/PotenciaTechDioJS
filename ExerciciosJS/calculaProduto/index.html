@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de de preços</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Preços</h1>
+
+        <form id="calForm">
+            <label for="precoOriginal">Digite o preço normal do produto:</label>
+            <input type="number" id="precoOriginal" required step="0.1"><br><br>
+
+            <label for="precoEtiqueta">Digite o preço de etiqueta do produto:</label>
+            <input type="number" id="precoEtiqueta" required step="0.1"><br><br>
+
+            <center><label for="formaPagamento">Escolha a forma de pagamento:</label></center>
+            <ul id="formaPagamento">
+                <li>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="debito"> 01 - Débito (10% de desconto)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="vista"> 02 - Dinheiro ou pix (15% de desconto)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="credito2"> 03 - Crédito em duas vezes (preço de
+                        etiqueta S/Juros)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="credito10"> 04 - Crédito acima de duas vezes
+                        (preço de etiqueta + 10% de juros)
+                    </label>
+                </li>
+            </ul>
+            <div class="button">
+                        <button type="button" onclick="calcularPreco()">Calcular</button>
+                    </div>
+        </form>
+
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
+        <p id="situacao"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
